@@ -3,9 +3,17 @@
 
         <!-- App -->
 
-        
+        <Assembly Name="Tel.Egram.Gui" Dynamic="Required All" /> 
+        <Assembly Name="Tel.Egram.Gui.Views" Dynamic="Required All" /> 
+        <Assembly Name="Tel.Egram.Model" Dynamic="Required All" /> 
+        <Assembly Name="Tel.Egram.Services" Dynamic="Required All" />    
 
         <!-- Avalonia -->
+
+        <Assembly Name="Avalonia.Base" Dynamic="Required All" />
+        <Assembly Name="Avalonia.Desktop" Dynamic="Required All" />
+        <Assembly Name="Avalonia.DesktopRuntime" Dynamic="Required All" />
+        <Assembly Name="Avalonia.Native" Dynamic="Required All" />
 
         <Assembly Name="Avalonia.Animation" Dynamic="Required All" />
         <Assembly Name="Avalonia.Base" Dynamic="Required All" />
@@ -21,11 +29,9 @@
         <Assembly Name="Avalonia.Themes.Default" Dynamic="Required All" />
         <Assembly Name="Avalonia.Markup" Dynamic="Required All" />
         <Assembly Name="Avalonia.Markup.Xaml" Dynamic="Required All" />
-        <Assembly Name="Avalonia.DotNetCoreRuntime" Dynamic="Required All" />
 
         <Assembly Name="Avalonia.Win32" Dynamic="Required All" />
         <Assembly Name="Avalonia.Gtk3" Dynamic="Required All" />
-        <Assembly Name="Avalonia.MonoMac" Dynamic="Required All" />
 
         <Assembly Name="Avalonia.Direct2D1" Dynamic="Required All" />
         <Assembly Name="SharpDX" Dynamic="Required All" />
@@ -36,16 +42,7 @@
         <Assembly Name="Avalonia.Skia" Dynamic="Required All" />
         <Assembly Name="SkiaSharp" Dynamic="Required All" />
 
-        <!-- PanAndZoom -->
-
-        <Assembly Name="PanAndZoom" Dynamic="Required All">
-            <Type Name="PanAndZoom.StretchMode" Dynamic="Required All"/>
-            <Type Name="PanAndZoom.StretchMode[]" Dynamic="Required All"/>
-            <Type Name="PanAndZoom.ButtonName" Dynamic="Required All"/>
-            <Type Name="PanAndZoom.ButtonName[]" Dynamic="Required All"/>
-            <Type Name="PanAndZoom.IPanAndZoom" Dynamic="Required All"/>
-        </Assembly>
-        <Assembly Name="Avalonia.Controls.PanAndZoom" Dynamic="Required All" />
+        <!-- Libs -->
         <Assembly Name="Newtonsoft.Json" Dynamic="Required All" >
             <Type Name="Newtonsoft.Json.Serialization.ObjectConstructor`1[[System.Object,System.Private.CoreLib]]" Dynamic="Required All" />
         </Assembly>
